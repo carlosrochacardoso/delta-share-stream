@@ -72,7 +72,7 @@ Referência: [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-et
 
 - Executar job `upsert.py`
 
-- Para visualizar os dados criar um Glue Crawler do tipo Delta Table tendo como origem o path da tabela target atualizada pelo job stram.
+- Para visualizar os dados criar um Glue Crawler do tipo Delta Table tendo como origem o path da tabela target. Consultar dados via AWS Athena.
 
 
 ## Referências
