@@ -1,0 +1,5 @@
+{
+    "shareCredentialsVersion": 1,
+    "endpoint": "https://<endpoint>/delta-sharing",
+    "bearerToken": "tokenfruit99"
+}
