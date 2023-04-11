@@ -38,8 +38,7 @@
      - Salvar o arquivo `delta-sharing-client/jar/delta-sharing-spark_2.12-0.6.3.jar` em um bucket S3
      - Na guia `job details`, incluir path para esse arquivo no campo `Dependent JARs path`
 
-- Para todos os jobs Glue, na guia `job details` configurar a versão `glue 4.0` e adicionar os `Job parameters` a seguir:
-
+- Para todos os jobs Glue, na guia `Job details` configurar a versão `glue 4.0` e adicionar os `Job parameters` a seguir:
 
     `--conf` :
     ```
@@ -71,6 +70,8 @@ Referência: [https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-et
 - Executar job `stream.py`
 
 - Executar job `upsert.py`
+
+- Alterar o arquivo `fruits_batch.csv` e reexecutar o job `upsert.py` para inserir novas atualizações no fluxo
 
 - Para visualizar os dados criar um Glue Crawler do tipo Delta Table tendo como origem o path da tabela target. Consultar dados via AWS Athena.
 
